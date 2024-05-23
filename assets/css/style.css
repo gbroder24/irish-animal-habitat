@@ -1,3 +1,17 @@
 body {
     background-color: white;
 }
+
+.game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 75px;
+    height: 75px;
+    margin: 1rem;
+    background-color: green;
+}
