@@ -15,15 +15,20 @@ for(i=0; i<classBox.length; i++){
  */
 function boxClicked (event){
     let div = this;
-    console.log("Clicked")
     this.classList.toggle('box-inner');
 
     if (!flippedCard){
+        //first click
         flippedCard = true;
         cardOne = this;
     } else {
+        //second click
         flippedCard = false;
         cardTwo = this;
     }
+
+    //do cards match
+    console.log(cardOne.dataset.img);
+    console.log(cardTwo.dataset.img);
 }
 
