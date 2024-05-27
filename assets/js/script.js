@@ -1,4 +1,5 @@
 let flippedCard = false;
+let lockBoard = false;
 let cardOne;
 let cardTwo;
 
@@ -14,18 +15,22 @@ for(i=0; i<classBox.length; i++){
  * Code used from https://youtu.be/6-CsPmYQ-VI?si=Oecpo5LhCfgwdWHB tutorial
  */
 function boxClicked (event){
-    let div = this;
-    this.classList.toggle('box-inner');
+    if(lockBoard)
+        return;
+        let div = this;
+        this.classList.toggle('box-inner');
 
-    if (!flippedCard){
-        flippedCard = true;
-        cardOne = this;
-    } else {
-        flippedCard = false;
-        cardTwo = this;
-        checkForMatch();
+        if (!flippedCard){
+            flippedCard = true;
+            cardOne = this;
+        } else {
+            flippedCard = false;
+            cardTwo = this;
+            checkForMatch();
+          }
     }
-}
+
+
 
 /**
  * The functions below checks if cards match, remove event listener and stay flipped. If cards don't match flip back.
@@ -45,8 +50,12 @@ function disableCards(){
 }
 
 function unFlipCards(){
+    lockBoard = true;
+
     setTimeout(() => {
         cardOne.classList.remove('box-inner');
         cardTwo.classList.remove('box-inner');
-    }, 1500);
+
+        lockBoard = false;
+    }, 5000);
 }
