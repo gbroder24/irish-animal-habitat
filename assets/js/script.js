@@ -9,36 +9,44 @@ for(i=0; i<classBox.length; i++){
 }
 
 /**
- * 
- * The function checks if this card was clicked.
- * If clicked, flip card and store the state of the the card.
- * If cards match, stay flipped. If cards don't match flip back.
- * Code used from https://www.youtube.com/watch?v=m8nmh3_lejc&list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw&index=8 tutorial
+ * The function checks if the card clicked was the first card or the second.
+ * If clicked, store the state of the the card.
+ * Code used from https://youtu.be/6-CsPmYQ-VI?si=Oecpo5LhCfgwdWHB tutorial
  */
 function boxClicked (event){
     let div = this;
     this.classList.toggle('box-inner');
 
     if (!flippedCard){
-        //first click
         flippedCard = true;
         cardOne = this;
     } else {
-        //second click
         flippedCard = false;
         cardTwo = this;
-    
-    //do cards match
-    if(cardOne.dataset.image === cardTwo.dataset.image){
-        //cards match
-        cardOne.removeEventListener('click', boxClicked);
-        cardTwo.removeEventListener('click', boxClicked);
-    } else {
-        //cards do not match
-        setTimeout(() => {
-            cardOne.classList.remove('box-inner');
-            cardTwo.classList.remove('box-inner');
-        }, 1000);
+        checkForMatch();
     }
- }
+}
+
+/**
+ * The functions below checks if cards match, remove event listener and stay flipped. If cards don't match flip back.
+ * Code used from https://youtu.be/m8nmh3_lejc?si=2rHCCisfFgYSHW0W tutorial
+ */
+function checkForMatch(){
+    if(cardOne.dataset.image === cardTwo.dataset.image){
+        disableCards();
+    } else {
+        unFlipCards();
+    }
+}
+
+function disableCards(){
+    cardOne.removeEventListener('click', boxClicked);
+    cardTwo.removeEventListener('click', boxClicked);
+}
+
+function unFlipCards(){
+    setTimeout(() => {
+        cardOne.classList.remove('box-inner');
+        cardTwo.classList.remove('box-inner');
+    }, 1500);
 }
