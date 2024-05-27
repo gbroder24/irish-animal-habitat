@@ -2,11 +2,9 @@ let flippedCard = false;
 let cardOne;
 let cardTwo;
 
-let classBox = document.getElementsByClassName("box");
 
-for(i=0; i<classBox.length; i++){
-    classBox[i].addEventListener('click', boxClicked);
-}
+
+
 
 /**
  * 
@@ -28,7 +26,16 @@ function boxClicked (event){
     }
 
     //do cards match
-    console.log(cardOne.dataset.img);
-    console.log(cardTwo.dataset.img);
+    if(cardOne.dataset.image === cardTwo.dataset.image){
+        //cards match
+        cardOne.removeEventListener('click', boxClicked);
+        cardTwo.removeEventListener('click', boxClicked);
+        console.log('Cards match!');
+    } 
 }
 
+let classBox = document.getElementsByClassName("box");
+
+for(i=0; i<classBox.length; i++){
+    classBox[i].addEventListener('click', boxClicked);
+}
