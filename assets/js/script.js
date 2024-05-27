@@ -65,6 +65,7 @@ function unFlipCards(){
 /**
  * This function sets flippedCard, lockBoard variables to false and 
  * sets cardOne and cardTwo variables to null resetting the board.
+ * Code used from https://youtu.be/20k84LS1LZY?si=Oy7ZmA21I4U-_UPy tutorial
  */
 function resetBoard(){
     flippedCard = false;
