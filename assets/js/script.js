@@ -15,8 +15,8 @@ for(i=0; i<classBox.length; i++){
  * Code used from https://youtu.be/6-CsPmYQ-VI?si=Oecpo5LhCfgwdWHB tutorial
  */
 function boxClicked (event){
-    if(lockBoard)
-        return;
+    if(lockBoard) return;
+    if(this === cardOne) return;
         let div = this;
         this.classList.toggle('box-inner');
 
@@ -24,8 +24,8 @@ function boxClicked (event){
             flippedCard = true;
             cardOne = this;
         } else {
-            flippedCard = false;
             cardTwo = this;
+
             checkForMatch();
           }
     }
@@ -47,6 +47,8 @@ function checkForMatch(){
 function disableCards(){
     cardOne.removeEventListener('click', boxClicked);
     cardTwo.removeEventListener('click', boxClicked);
+
+    resetBoard();
 }
 
 function unFlipCards(){
@@ -56,6 +58,17 @@ function unFlipCards(){
         cardOne.classList.remove('box-inner');
         cardTwo.classList.remove('box-inner');
 
-        lockBoard = false;
-    }, 5000);
+        resetBoard();
+    }, 1500);
+}
+
+/**
+ * This function sets flippedCard, lockBoard variables to false and 
+ * sets cardOne and cardTwo variables to null resetting the board.
+ */
+function resetBoard(){
+    flippedCard = false;
+    lockBoard = false;
+    cardOne = null;
+    cardTwo = null;
 }
