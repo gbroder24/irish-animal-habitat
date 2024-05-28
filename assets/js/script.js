@@ -74,7 +74,11 @@ function resetBoard(){
     cardTwo = null;
 }
 
-
+/**
+ * This function is an Immediately Invoked Function Expression.
+ * It shuffles the cards and assigns each card
+ * a random integer.
+ */
 (function shuffle(){
     for(i=0; i<classBox.length; i++){
         let randomPos = Math.floor(Math.random() * 12);
