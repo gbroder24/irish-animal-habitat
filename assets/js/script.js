@@ -73,3 +73,11 @@ function resetBoard(){
     cardOne = null;
     cardTwo = null;
 }
+
+
+(function shuffle(){
+    for(i=0; i<classBox.length; i++){
+        let randomPos = Math.floor(Math.random() * 12);
+        classBox[i].style.order = randomPos;
+    }
+})()
