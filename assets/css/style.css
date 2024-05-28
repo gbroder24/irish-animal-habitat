@@ -7,29 +7,40 @@
 body {
     height: 100vh;
     background-color: blue;
+    display: flex;
 }
 
 .game-area {
+    width: 75%;
+    height: 700px;
+    margin: auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
     background-color: rgb(69, 5, 247);
 }
 
 .box {
+    position: relative;
     background-color: transparent;
     width: 35px;
     height: 75px;
     margin: 1rem;
-    border: 1px solid #f1f1f1;
+    transform: scale(1);
     perspective: 1000px;
+}
+
+.box:active {
+    transform: scale(.97);
+    transition: transform .2s;
 }
 
 .box-inner {
     width: 35px;
     height: 75px;
-    position: relative;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -45,11 +56,14 @@ body {
   }
 
   .box-inner-front {
+    border-radius: 5px;
     background-color: #bbb;
     color: black;
+    
   }
 
   .box-inner-back {
+    border-radius: 5px;
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
