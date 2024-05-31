@@ -5,7 +5,11 @@ let cardTwo;
 
 let cardsChosen = [];
 let cardsWon = [];
+
 let pairsFound = document.getElementById('result');
+let congratsModal = document.getElementById('congrats-modal');
+let closeCongratsModal = document.getElementById('close');
+
 
 let classBox = document.getElementsByClassName("box");
 
@@ -49,7 +53,8 @@ function checkForMatch(){
         pairsFound.innerHTML = cardsWon.length;
 
         if(cardsWon.length === 6){
-            console.log("Congratulations!");
+            displayCongratsModal();
+            
         }
         cardsChosen = [];
 
@@ -95,6 +100,7 @@ function resetBoard(){
  * This function is an Immediately Invoked Function Expression.
  * It shuffles the cards and assigns each card
  * a random integer.
+ * Code used from https://youtu.be/20k84LS1LZY?si=Oy7ZmA21I4U-_UPy tutorial
  */
 (function shuffle(){
     for(i=0; i<classBox.length; i++){
@@ -102,3 +108,10 @@ function resetBoard(){
         classBox[i].style.order = randomPos;
     }
 })()
+
+/**This function displays the congratulations modal
+ * Code used from https://www.w3schools.com/howto/howto_css_modals.asp tutorial
+ */
+function displayCongratsModal() {
+    congratsModal.style.display = "block";
+}
