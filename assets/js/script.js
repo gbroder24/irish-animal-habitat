@@ -3,6 +3,9 @@ let lockBoard = false;
 let cardOne;
 let cardTwo;
 
+let cardsChosen = [];
+let cardsWon = [];
+
 let classBox = document.getElementsByClassName("box");
 
 for(i=0; i<classBox.length; i++){
@@ -23,9 +26,10 @@ function boxClicked (event){
         if (!flippedCard){
             flippedCard = true;
             cardOne = this;
+            cardsChosen.push(cardOne.dataset);
         } else {
             cardTwo = this;
-
+            cardsChosen.push(cardTwo.dataset);
             checkForMatch();
           }
     }
@@ -39,8 +43,14 @@ function boxClicked (event){
 function checkForMatch(){
     if(cardOne.dataset.image === cardTwo.dataset.image){
         disableCards();
+
+        cardsWon.push(cardsChosen);
+        console.log(cardsWon);
+        cardsChosen = [];
+        
     } else {
         unFlipCards();
+        cardsChosen = [];
     }
 }
 
