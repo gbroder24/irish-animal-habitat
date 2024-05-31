@@ -5,6 +5,7 @@ let cardTwo;
 
 let cardsChosen = [];
 let cardsWon = [];
+let pairsFound = document.getElementById('result');
 
 let classBox = document.getElementsByClassName("box");
 
@@ -45,8 +46,14 @@ function checkForMatch(){
         disableCards();
 
         cardsWon.push(cardsChosen);
-        console.log(cardsWon);
+        pairsFound.innerHTML = cardsWon.length;
+
+        if(cardsWon.length === 6){
+            console.log("Congratulations!");
+        }
         cardsChosen = [];
+
+
         
     } else {
         unFlipCards();
