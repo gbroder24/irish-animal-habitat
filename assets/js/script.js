@@ -19,12 +19,6 @@ for(i=0; i<classBox.length; i++){
     classBox[i].addEventListener('click', boxClicked);
 }
 
-let classButton = document.getElementsByClassName("button");
-
-for(j=0; j<classButton.length; j++){
-    classButton[j].addEventListener('click', closeModalCongrats);
-}
-
 /**
  * The function checks if the card clicked was the first card or the second.
  * If clicked, store the state of the the card.
@@ -128,9 +122,13 @@ function displayCongratsModal() {
  * Code used from https://www.w3schools.com/howto/howto_css_modals.asp tutorial
  */
 function closeModalCongrats() {
-    congratsModal.style.display = "hide";
+    console.log("Modal Closed!")
+    congratsModal.style.display = "none";
 }
 
-function loadNewGame() {
-    closeModalCongrats();
+
+let classButton = document.getElementsByClassName("button");
+
+for(j=0; j<classButton.length; j++){
+    classButton[j].addEventListener('click', closeModalCongrats);
 }
