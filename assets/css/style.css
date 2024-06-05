@@ -132,20 +132,20 @@ body {
   cursor: pointer;
 }
 
-/* Meadia query: tablets and larger (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-
+  
   body{
     margin: auto;
   }
-
+  
   .heading {
     text-align: center;
     width: 600px;
     font-size: 1.5rem;
     padding: 10px 50px;
     margin: 10px 84px;
-}
+  }
   h1 {
     width: 480px;
   }
@@ -175,6 +175,26 @@ body {
     width: 300px;
     padding: 10px;
     margin: 50px 234px;
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Media query: laptop and larger (1024px and up) */
+@media screen and (min-width: 768px) {
+
+  .heading {
+    text-align: center;
+    width: 600px;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+    margin: 10px 215px;
+  }
+  
+  .score-area {
+    width: 300px;
+    padding: 10px;
+    margin: 50px 362px;
     font-size: 1.5rem;
   }
 
