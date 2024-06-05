@@ -135,17 +135,30 @@ body {
 /* Meadia query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
+  body{
+    margin: auto;
+  }
+
   .heading {
     text-align: center;
-    width: 900px;
-    font-size: 2.5rem;
-    padding: 50px;
-    margin: 10px 195px;
+    width: 600px;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+    margin: 10px 84px;
 }
+  h1 {
+    width: 480px;
+  }
+
+  h3 {
+    width: 480px;
+  }
 
   .game-area {
-    width: 200%;
-    height: 35%;
+    width: 90%;
+    height: 70%;
+    padding: 10px;
+    margin: 0 40px;
   }
 
   .box {
@@ -156,6 +169,13 @@ body {
   .box-inner {
     width: 150px;
     height: 150px;
+  }
+
+  .score-area {
+    width: 300px;
+    padding: 10px;
+    margin: 50px 234px;
+    font-size: 1.5rem;
   }
 
 }
