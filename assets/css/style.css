@@ -11,7 +11,7 @@ body {
     font-family: "Raleway", sans-serif;
     color: blanchedalmond;
     text-align: center;
-    margin: 0;
+    margin: 95px 0;
     display: flex;
     flex-direction: column;
 }
@@ -21,6 +21,8 @@ body {
 .heading {
     text-align: center;
     width: 230px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 
@@ -30,7 +32,7 @@ body {
     height: 65%;
     
     padding: 8px 4px;
-    margin: 5px 10px;
+    margin: 5px 35px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -86,8 +88,9 @@ body {
   }
 
   .score-area {
-    width: 230px;
-    margin-bottom: 10px;
+    width: 210px;
+    margin: 0 35px;
+    font-size: 1rem;
   }
 
   /* The Modal (background) */
@@ -109,7 +112,7 @@ body {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 17px;
   border: 1px solid #888;
   width: 80%;
 }
@@ -131,6 +134,14 @@ body {
 
 /* Meadia query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+  .heading {
+    text-align: center;
+    width: 900px;
+    font-size: 2.5rem;
+    padding: 50px;
+    margin: 10px 195px;
+}
 
   .game-area {
     width: 200%;
