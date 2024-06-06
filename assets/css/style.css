@@ -171,6 +171,10 @@ body {
     height: 150px;
   }
 
+  .card-img{
+    width: 100%;
+  }
+
   .score-area {
     width: 300px;
     padding: 10px;
