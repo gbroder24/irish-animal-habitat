@@ -117,19 +117,41 @@ body {
   width: 80%;
 }
 
-/* The Close Button */
-#close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal-content h4 {
+  font-family: 'Roboto Condensed';
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: green;
 }
 
-#close:hover,
-#close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.modal-content h5 {
+  font-family: 'Roboto Condensed';
+  font-size: 1rem;
+  font-weight: 600;
+  color: green;
+}
+
+.modal-content p {
+  font-family: 'Roboto Condensed';
+  font-size: 1rem;
+  font-weight: 600;
+  color: green;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 50px;
+  height: 25px;
+  margin: 2px;
+}
+
+.button:hover {
+  background-color: black;
+  color: #fefefe;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -180,6 +202,34 @@ body {
     padding: 10px;
     margin: 50px 234px;
     font-size: 1.5rem;
+  }
+
+  .modal-content {
+    margin-top: 15.5rem;
+  }
+  
+  .modal-content h4 {
+    
+    font-size: 2rem;
+    
+    
+  }
+  
+  .modal-content h5 {
+    font-size: 1.5rem;
+  }
+  
+  .modal-content p {
+    font-size: 1.5rem;
+  }
+  
+  .modal-buttons {
+    justify-content: space-evenly;
+  }
+  
+  .button {
+    width: 20%;
+    height: 25px;
   }
 
 }
