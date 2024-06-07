@@ -161,7 +161,6 @@ The score area informs the user of their score. The inital score is integer numb
 ### The Congratulations Modal
 When the user finds the last matching pair a congratulations modal is displayed informing the user that they have won the game. They have matched the animals with their correct habitat and found all six pairs. The modal also gives the user a choice of playing a new game or not. If the user chooses to play a new game the modal closes and a new game loads with all twelve cards shuffled. If the user chooses not to play another game the modal closes and a new game loads with all twelve cards shuffled for the next waiting player.
 
-
 ## Future Features
 
 ### Techniques Page
