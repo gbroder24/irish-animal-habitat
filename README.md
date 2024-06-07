@@ -1,106 +1,110 @@
-Irish Animal Habitat
-Irish Animal Habitat is an online memory card game where the user matches the animal to there habitat. The aim of the game is to help children engage with nature and Irelands unique biodiversity. It also provides a form of cognitive training where the user has to remember where the cards are positioned in the game.
+# Irish Animal Habitat
+## Irish Animal Habitat is an online memory card game where the user matches the animal to there habitat. The aim of the game is to help children engage with nature and Irelands unique biodiversity. It also provides a form of cognitive training where the user has to remember where the cards are positioned in the game.
 
-PP2 - Gary Broderick
-am i responsive screenshot
+### PP2 - Gary Broderick
+![am i responsive screenshot](documentation/responsive/am-i-responsive.PNG)
 
-Live Site
-Repository
-Table of Contents
-UX / UI
+------------------------------------------------------------------------------------
+## [**Live Site**](https://gbroder24.github.io/irish-animal-habitat/)
 
-Target Audience
-User Stories
-Client Goals
-User Goals
-Wireframes
-Landing Page
-Techniques Page
-Signup Page
-Color Palette
-Font Styles
-Accessibility
-List of Features
+## [**Repository**](https://github.com/gbroder24/irish-animal-habitat.git)
 
-Header
-Hero Image
-The Benefits
-Paralax Image
-Timetable
-Footer
-Techniques Page
-Signup Page
-Future-Features
+## Table of Contents
 
-Techniques Page
-Signup Page
-User Account
-Error Page
-Tools and Technologies
+[ UX / UI ](#uxui)  
++ [ Target Audience ](#target-audience)  
++ [ User Stories ](#user-stories)  
+	* [ Client Goals ](#client-goals)  
+	* [ User Goals ](#user-goals)   
++ [ Wireframes ](#wireframes)  
+	* [ Landing Page ](#landing-page)  
+	* [ Techniques Page ](#techniques-page)  
+	* [ Signup Page ](#signup-page)   
++ [ Color Palette ](#color-palette)  
++ [ Font Styles ](#font-styles)  
++ [ Accessibility ](#accessibility)  
 
-Testing
+[ List of Features ](#list-of-features)    
++ [ Header ](#header)  
++ [ Hero Image ](#hero-image)  
++ [ The Benefits ](#the-benefits)  
++ [ Paralax Image ](#paralax-image)  
++ [ Timetable ](#timetable)  
++ [ Footer ](#footer)
++ [ Techniques Page ](techniques-page-1)  
++ [ Signup Page ](signup-page-1)  
 
-Website Links
-Signup Form
-User Testing
-Responsive Testing
-Lighthouse Testing
+[ Future-Features ](#future-features)  
++ [ Techniques Page ](#techniques-page-2)  
++ [ Signup Page ](#signup-page-2)  
++ [ User Account ](#user-account)  
++ [ Error Page ](#error-page)  
 
-Google Chrome
-index.html
-techniques.html
-signup.html
-Microsoft Edge
-index.html
-techniques.html
-signup.html
-HTML Validation
+[ Tools and Technologies ](#tools-and-technologies)   
 
-index.html
-techniques.html
-signup.html
-CSS Validation
+[ Testing ](#testing)  
++ [ Website Links ](#website-links)  
++ [ Signup Form ](#signup-form)  
++ [ User Testing ](#user-testing)  
++ [ Responsive Testing ](#responsive-testing)  
 
-style.css
-Known Bugs
+[ Lighthouse Testing ](#lighthouse-testing)    
++ [ Google Chrome ](#google-chrome)  
+	* [ index.html ](#indexhtml)  
+	* [ techniques.html ](#techniqueshtml)  
+	* [ signup.html ](#signuphtml)  
++ [ Microsoft Edge ](#microsoft-edge)  
+	* [ index.html ](#indexhtml-1)  
+	* [ techniques.html ](#techniqueshtml-1)  
+	* [ signup.html ](#signuphtml-1)  
 
-Deployment
+ [ HTML Validation ](#html-validation)  
++ [ index.html ](#indexhtml-2)  
++ [ techniques.html ](#techniqueshtml-2)  
++ [ signup.html ](#signuphtml-2)  
 
-Cloning and Forking
-Local
-Remote
-Credits
+[ CSS Validation ](#css-validation)    
++ [ style.css ](#stylecss)  
 
-Images
-Embedded Videos
-Map
-Content and Resources
-Readme
-Acknowledgements
-UX/UI
-Target Audience
+[ Known Bugs ](#known-bugs)   
+
+[ Deployment](#deployment) 
++ [ Cloning and Forking ](#cloning-and-forking)  
++ [ Local ](#local)  
++ [ Remote ](#remote)  
+
+[ Credits](#credits)  
++ [ Images ](#images)  
++ [ Embedded Videos ](#embedded-videos)  
++ [ Map ](#map)  
++ [ Content and Resources ](#content--resources)  
++ [ Readme ](#readme)  
++ [ Acknowledgements ](#acknowledgements)  
+
+## UX/UI
+
+### Target Audience
+
 The target audience of the website is to attract young children and to help them engage with nature and Irelands unique biodiversity. Hopefully it also inspires young children to investigate and explore Irelands wild nature. This is a game that entertains and educates young children.
 
-User Stories
-Client Goals
+## User Stories
+
+### Client Goals
+
 I want to provide an online game that highlights and raises awareness about Irelands unique biodiversity.
 I want to provide entertainment that sharpens the users memory.
 I want young children to explore and engage with Irelands unique biodiversity.
-User Goals
+
+### User Goals
+
 I want to engage and explore Irelands unique biodiversity.
 I want to play an entertaining and educational game about Irish animals and their habitats.
 I want to improve my memory.
-Wireframes
+
+### Wireframes
 The wireframe mockups were created on Balsamiq. They show what the website would look like on mobile and desktop devices.
 
-Landing Page
-mobile-desktop-wireframe
-
-Techniques Page
-mobile-desktop-wireframe
-
-Signup Page
-mobile-desktop-wireframe
+![mobile-desktop-wireframe](documentation/wireframes/home-page.PNG)
 
 Color Palette
 The following colors were chosen for the website and ensure contrast is achieved in the main parts of the page.
