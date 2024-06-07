@@ -104,7 +104,7 @@ I want to improve my memory.
 ### Wireframes
 The wireframe mockups were created on Balsamiq. They show what the website would look like on mobile and desktop devices.
 
-![mobile-desktop-wireframe](documentation/wireframes/home-page.PNG)
+![mobile-desktop-wireframe](documentation/wireframes/mobile-desktop-wireframe.PNG)
 
 Color Palette
 The following colors were chosen for the website and ensure contrast is achieved in the main parts of the page.
