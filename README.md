@@ -1,7 +1,7 @@
 Irish Animal Habitat
-Irish 
+Irish Animal Habitat is an online memory card game where the user matches the animal to there habitat. The aim of the game is to help children engage with nature and Irelands unique biodiversity. It also provides a form of cognitive training where the user has to remember where the cards are positioned in the game.
 
-PP1 - Gary Broderick
+PP2 - Gary Broderick
 am i responsive screenshot
 
 Live Site
@@ -79,26 +79,17 @@ Readme
 Acknowledgements
 UX/UI
 Target Audience
-The target audience of the website is to attract people of any age or gender who may have busy and stressful daily lives who want to de-stress, improve sleep and better understand their bodies and minds. It also targets people who are at beginner's level or that have an interest in body and mind techniques.
+The target audience of the website is to attract young children and to help them engage with nature and Irelands unique biodiversity. Hopefully it also inspires young children to investigate and explore Irelands wild nature. This is a game that entertains and educates young children.
 
 User Stories
 Client Goals
-I want my business to have an online presence.
-I want an easy to navigate website.
-I want to showcase my expertise, knowledge and skills.
-I want to attract users to my website.
-I want users to contact me.
-I want users to be aware of and directed my social media.
-I want users to book a class.
-I want users to have the option of signing up to a newsletter.
-I want to inform users with content, imagery and videos.
-I want to share my passion.
+I want to provide an online game that highlights and raises awareness about Irelands unique biodiversity.
+I want to provide entertainment that sharpens the users memory.
+I want young children to explore and engage with Irelands unique biodiversity.
 User Goals
-I am a beginner and curious about body and mind improvement techniques.
-I want research with techniques through content, imagery and videos to further my interests.
-I want to sign up to a class.
-I want to contact the client.
-I want to navigate the website easily.
+I want to engage and explore Irelands unique biodiversity.
+I want to play an entertaining and educational game about Irish animals and their habitats.
+I want to improve my memory.
 Wireframes
 The wireframe mockups were created on Balsamiq. They show what the website would look like on mobile and desktop devices.
 
