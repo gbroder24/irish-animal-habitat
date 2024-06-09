@@ -1,5 +1,5 @@
 # Irish Animal Habitat
-## Irish Animal Habitat is an online memory card game where the user matches the animal to there habitat. The aim of the game is to help children engage with nature and Irelands unique biodiversity. It also provides a form of cognitive training where the user has to remember where the cards are positioned in the game.
+## Irish Animal Habitat is an online memory card game where the user matches the animal to their habitat. The aim of the game is to help children engage with nature and Irelands unique biodiversity. It also provides a form of cognitive training where the user has to remember where the cards are positioned in the game.
 
 ### PP2 - Gary Broderick
 ![am i responsive screenshot](documentation/responsive/am-i-responsive.PNG)
@@ -152,7 +152,7 @@ The game area displays twelve cards in neat rows and columns. The cards lay face
 
 ![benefits-mobile-image](documentation/features/benefits-mobile.PNG)
 
-### The score Area
+### The Score Area
 
 The score area informs the user of their score. The inital score is integer number 0 which means that no matching pairs have been found. For each matching pair thereafter the score increments by an integer number of 1. The max score that any user can reach is a maximum score of integer number 6.
 
@@ -163,69 +163,62 @@ When the user finds the last matching pair a congratulations modal is displayed 
 
 ## Future Features
 
-### Techniques Page
+### A Timer
 
-Implement a detailed profile on the client business owner about the skill set they possess, experience and qualifications.
+Implement a timer that automatically starts incrementing when the user clicks on the first chosen card. The timer automatically stops when the user finds the last matching card.
 
-### Signup Page
+### User Modal
 
-Implement a calendar booking system so that the user can book a specific class on a specific day / month.
-Implement a 'class full' constraint on the booking system and have dates on the calendar blocked out informing the user of class availability.
+Implement a user modal which is displayed when the player wins the game.  
+Implement an input area for the user to enter and submit their user name.  
+Implement a score area to display the users score.  
+Implement a time record area where the users time will be displayed.   
 
-### User Account
-Implement a User Account feature / page for returning customers so that they do not have to enter their details every time they return to the site.
+### Leaderboard Modal
+Implement a leaderboard modal feature so that the user(s) can compare the time it took to complete the game and adds a competitive aspect to the game.  
+Implement a leaderboard in local storage that records the score and time of the last ten to twenty users.
 
 ### Error Page
 Implement a 404 error page in case there are any bugs that prevent the website or any links from working and the user can navigate back to the website.
 
 ## Tools and Technologies
 + HTML5 Website Structure.  
-+ CSS3 Website Style.  
++ CSS3 Website Style. 
++ Javascript Website Logic.  
 + MarkDown Readme.md file  
 + [ Balsamiq ](https://balsamiq.com/wireframes/?gad_source=1&gclid=EAIaIQobChMI2N-YppndhQMV5pxQBh0uTQgmEAAYASACEgJUvPD_BwE) Wireframes.  
 + [ Github ](https://github.com/about) Repository and deployment.  
 + [ Gitpod ](https://www.gitpod.io/about) IDE.  
 + [ Git ](https://git-scm.com/about) Version control.  
 + [ Fontawesom ](https://fontawesome.com/) Icons.  
-+ [ W3schools ](https://www.w3schools.com/) HTML / CSS tips.  
-+ [ Google Fonts ](https://fonts.google.com/) Font family.  
-+ [ Am I Responsive ](https://ui.dev/amiresponsive) to show website on devices.  
-+ [ Pexels ](https://www.pexels.com/) Images.  
-+ [ Image Resizer ](https://imageresizer.com/) to rezize images.  
-+ [ Youtube ](https://www.youtube.com/) for embedded videos.
-+ [ Stack Edit ](https://stackedit.io/) for writing markdown language.
++ [ W3schools ](https://www.w3schools.com/) HTML / CSS / Javascript tips.   
++ [ Am I Responsive ](https://ui.dev/amiresponsive) to show website on devices.   
++ [ Vance AI ](https://vanceai.com/) to rezize ai images.  
++ [ Youtube ](https://www.youtube.com/) for javascript tutorials.  
++ [ Leonardo AI ](https://leonardo.ai/) to generate ai images.  
 
 ## Testing
-Test scenarios for the Body and Mind website were created by the Full Stack Software Developer (Gary Broderick). The website was manually tested, validated and results recorded. User testing (by family and friends) was also executed.
+Test scenarios for the Irish Animal Habitat website were created by the Full Stack Software Developer (Gary Broderick). The website was manually tested, validated and results recorded. User testing (by family and friends) was also executed.
 
 ### Website Links
-The following test scenarios were executed on the websites links and results recorded:
+The following test scenarios were executed on the website and results recorded:
 
 |Scenario|Result  |
 |--|--|
-| Verify 'Techniques' link navigates to the correct page.|Pass  |
-| Verify 'Home' link navigates to the correct page.|Pass  |
-| Verify 'Signup' link navigates to the correct page.|Pass  |
-| Verify 'Body and Mind' logo link navigates to the correct page.|Pass  |
-| Verify 'Facebook' social media link navigates to the correct page.|Pass  |
-| Verify 'Twitter' social media link navigates to the correct page.|Pass  |
-| Verify 'Youtube' social media link navigates to the correct page.|Pass  |
-| Verify 'Instagram' social media link navigates to the correct page.|Pass  |
-
-### Signup Form
-The following test scenarios were executed on the signup form and results recorded:
-
-|Scenario|Result  |
-|--|--|
-| Do not fill in any details and select the 'Submit' button. Verify that the user is prompted to 'Please fill out this field' for 'First Name'.|Pass  |
-| Fill in 'First Name' details and select the 'Submit' button. Verify that the user is prompted to 'Please fill out this field' for 'Last Name'.|Pass  |
-| Fill in 'Last Name' details and select the 'Submit' button. Verify that the user is prompted to 'Please fill out this field' for 'Email Address'.|Pass  |
-| Fill in 'Email Address' details and exclude '@' symbol. Then select the 'Submit' button. Verify that the user is prompted to 'Please include an @ in the email address' for 'Email Address'.|Pass  |
-| Select 'Affirmation' or 'Visual' class radio button. Navigate away from the 'Signup' page. Now navigate to the 'Signup' page. Verify the 'Yoga' class radio button is selected.|Pass  |
-| Verify the 'User' can enter text into the text area to send the 'Client' a message.|Pass  |
-| Ensure the 'News Letter' option is unchecked. Navigate away from the 'Signup' page. Now navigate to the 'Signup' page. Verify the 'News Letter' checkbox is checked.|Pass  |
-| Populate all the required fields correctly and select the 'Submit' button. Verify that a new window / tab is displayed informing the 'User' that they have submitted their details successfully.|Pass  |
-| Populate all the required fields correctly and ensure the 'News Letter' option is unchecked. Select the 'Submit' button. Verify that 'News' has not been included in the sent data table for 'Input Name' column.|Pass  |
+| Verify that when the user clicks on the first chosen card that the card flips over and reveals an image.|Pass  |
+| Verify that the first chosen card does not unflip and remains face up displaying the image.|Pass  |
+| Verify that when the user clicks on the second chosen card that the card flips over and reveals an image.|Pass  |
+| Verify that when the animal is matched with its correct habitat that the two cards remain unflipped and remain face up.|Pass  |
+| Verify that when the animal is matched with its correct habitat that the matching pairs found score increments by one.|Pass  |
+| Verify that all remaining matching cards behave in the same way.|Pass  |
+| Verify that when all the matching pairs are found the score increments to a maximum score of six.|Pass  |
+| Verify that when the animal is not matched with its correct habitat that the two unmatched cards unflip and remain face down not displaying the images.|Pass  |
+| Verify that when two cards have flipped over, another card cannot be flipped until 1.5 seconds has timed out.|Pass  |
+| Verify that when all matching pairs have been found a congratulations modal is displayed.|Pass  |
+| Verify the congratulations modal 'YES' button loads a new game.|Pass  |
+| Verify that the cards have been shuffled for the new game.|Pass  |
+| Verify the congratulations modal 'NO' button loads a new game.|Pass  |
+| Verify that the cards have been shuffled for the next game.|Pass  |
 
 ### User Testing
 The following test scenarios were executed on users and results recorded:
