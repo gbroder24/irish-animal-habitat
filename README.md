@@ -200,7 +200,7 @@ Implement a 404 error page in case there are any bugs that prevent the website o
 ## Testing
 Test scenarios for the Irish Animal Habitat website were created by the Full Stack Software Developer (Gary Broderick). The website was manually tested, validated and results recorded. User testing (by family and friends) was also executed.
 
-### Website Links
+### Website
 The following test scenarios were executed on the website and results recorded:
 
 |Scenario|Result  |
@@ -251,77 +251,52 @@ The Best Practice score for the Techniques page and the Signup page scored 78. T
 
 ### Google Chrome
 
-#### index.html
+#### Mobile
 
-![chrome-lighthouse-index-image](documentation/lighthouse/chrome/index.PNG)
+![chrome-lighthouse-index-image](documentation/lighthouse/chrome/chrome-mobile.PNG)
 
-#### techniques.html
+#### Desktop
 
-![chrome-lighthouse-techniques-image](documentation/lighthouse/chrome/techniques.PNG)
-
-![chrome-lighthouse-best-practice-techniques-image](documentation/lighthouse/chrome/techniques-best-practice.PNG)
-
-#### signup.html
-
-![chrome-lighthouse-signup-image](documentation/lighthouse/chrome/signup.PNG)
-
-![chrome-lighthouse-best-practice-signup-image](documentation/lighthouse/chrome/signup-best-practice.PNG)
+![chrome-lighthouse-techniques-image](documentation/lighthouse/chrome/chrome-mobile.PNG)
 
 ### Microsoft Edge
 
-#### index.html
+#### Mobile
 
-![edge-lighthouse-index-image](documentation/lighthouse/edge/index.PNG)
+![chrome-lighthouse-index-image](documentation/lighthouse/edge/edge-mobile.PNG)
 
-#### techniques.html
+#### Desktop
 
-![edge-lighthouse-techniques-image](documentation/lighthouse/edge/techniques.PNG)
-
-![edge-lighthouse-best-practice-techniques-image](documentation/lighthouse/edge/techniques-best-practice.PNG)
-
-#### signup.html
-
-![edge-lighthouse-signup-image](documentation/lighthouse/edge/signup.PNG)
-
-![edge-lighthouse-best-practice-signup-image](documentation/lighthouse/edge/signup-best-practice.PNG)
+![chrome-lighthouse-techniques-image](documentation/lighthouse/edge/edge-desktop.PNG)
 
 ## HTML Validation
-All html code was validated using the W3C Markup Validation Service.
+All html code was validated using the W3C Markup Validation Service. No errors found.
 
 ### index.html
 
 ![validation-index.html-image](documentation/validation/html/index.PNG)
 
-### techniques.html
-
-![validation-techniques.html-image](documentation/validation/html/techniques.PNG)
-
-### signup.html
-
-![validation-signup.html-image](documentation/validation/html/signup.PNG)
-
 ## CSS Validation
-All css code was validated using the W3C CSS Validation Service.
+All css code was validated using the W3C CSS Validation Service. No errors found.
 
 ### style.css
 
 ![validation-style.css-image](documentation/validation/css/css.PNG)
 
-![validation-style.css-warning-image](documentation/validation/css/css-warning.PNG)
+### script.js
+All javascript code was validated using the JSHint Code Quality Tool. No errors found.  
+
+![validation-style.css-image](documentation/validation/css/css.PNG)
 
 ## Known Bugs
 
-The following bug was discovered in the index.html file during Lighthouse testing:
+The following bugs were discovered:
 
 ![bugs-image](documentation/bugs/404-syntax-error.PNG)
 
-The following line of code in the index.html file on Line #17 was causing the error:
++ When the website loads / reloads the background of the website is white. Then a second after loading, the background image is displayed.  
 
-    <link rel="manifest" href="/site.webmanifest">
-
-The fix and solution to this bug was to modify the line of code to the following: 
-
-    <link rel="manifest" href="https://gbroder24.github.io/site.webmanifest" crossorigin="use-credentials">
++ When a cards image is displayed and the user clicks on it again, the cards flip over and then back displaying the image again.
 
 ## Deployment
 

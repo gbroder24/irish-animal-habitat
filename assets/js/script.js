@@ -7,7 +7,6 @@ let cardTwo;
 let cardsChosen = [];
 let cardsWon = [];
 
-
 let pairsFound = document.getElementById('result');
 let congratsModal = document.getElementById('congrats-modal');
 let closeCongratsModal = document.getElementById('close');

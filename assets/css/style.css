@@ -1,9 +1,11 @@
+/* Asterisk wildcard selector to overide default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* General styles */
 body {
     height: 100vh;
     width: 100vw;
@@ -15,16 +17,12 @@ body {
     flex-direction: column;
 }
 
-
-
 .heading {
     text-align: center;
     width: 230px;
     margin-left: 25px;
     margin-right: 25px;
 }
-
-
 
 .game-area {
     width: 75%;
@@ -62,45 +60,45 @@ body {
     transform-style: preserve-3d;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-  }
+}
 
-  .box-inner-front, .box-inner-back {
+.box-inner-front, .box-inner-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
+}
 
-  .box-inner-front {
+.box-inner-front {
     border-radius: 5px;
-  }
+}
 
-  .box-inner-back {
+.box-inner-back {
     border-radius: 5px;
     background-color: dodgerblue;
     transform: rotateY(180deg);
-  }
+}
 
-  .score-area {
+.score-area {
     width: 210px;
     margin: 0 35px;
     font-size: 1rem;
-  }
+}
 
-  /* The Modal (background) */
-  #congrats-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-  }
+/* The Congratulations Modal */
+#congrats-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
 
-  /* Modal Content */
+/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -145,11 +143,11 @@ body {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-  
+
   body{
     margin: auto;
   }
-  
+
   .heading {
     text-align: center;
     width: 600px;
@@ -157,6 +155,7 @@ body {
     padding: 10px 50px;
     margin: 10px 84px;
   }
+
   h1 {
     width: 480px;
   }
@@ -196,26 +195,23 @@ body {
   .modal-content {
     margin-top: 15.5rem;
   }
-  
+
   .modal-content h4 {
-    
     font-size: 2rem;
-    
-    
   }
-  
+
   .modal-content h5 {
     font-size: 1.5rem;
   }
-  
+
   .modal-content p {
     font-size: 1.5rem;
   }
-  
+
   .modal-buttons {
     justify-content: space-evenly;
   }
-  
+
   .button {
     width: 20%;
     height: 25px;
@@ -233,7 +229,7 @@ body {
     padding: 10px 50px;
     margin: 10px 215px;
   }
-  
+
   .score-area {
     width: 300px;
     padding: 10px;
@@ -243,13 +239,13 @@ body {
 
 }
 
-/* Media query: laptop and larger (1440px and up) */
-@media screen and (min-width: 1440px) {
+  /* Media query: laptop and larger (1440px and up) */
+  @media screen and (min-width: 1440px) {
 
   .heading {
     margin: 10px 420px;
   }
-  
+
   .score-area {
     margin: 50px 567px;
   }
@@ -262,7 +258,7 @@ body {
   .heading {
     margin: 10px 980px;
   }
-  
+
   .game-area {
     width: 100%;
     height: 60%;
