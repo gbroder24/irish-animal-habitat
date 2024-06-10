@@ -62,35 +62,43 @@ The default font family has been used to style the website. This was chosen so t
 
 The background image attracts the user and indicates that Irish Animal Habitat is a game about biodiversity and nature. It also engages the user and raises awareness of wildlife.
 
-![header-image](documentation/features/header.PNG)
+![background-image-mobile](documentation/features/background-image-mobile.PNG)
 
-![header-mobile-image](documentation/features/header-mobile.PNG)
+![background-image-desktop](documentation/features/background-image-desktop.PNG)
 
 ### The Headings
 
 The headings inform the user that the game is called Irish Animal Habitat and the theme of the game is to match the animal to its habitat.
 
-![hero-image](documentation/features/hero-image.PNG)
+![heading](documentation/features/heading.PNG)
 
 ### The Game Area
 
 The game area displays twelve cards in neat rows and columns. The cards lay face down with the back of the cards displayed to the user. When the user clicks on the first card the card flips from back to front displaying either an image of an animal or its habitat and stays in position. When the user clicks on the second card the card flips from back to front displaying either an image of an animal or its habitat. The first and second cards chosen stay in position facing the user if the animal is matched to its correct habitat. If they are not a match the cards will flip back to their inital state. When the website is initally loaded all the cards are shuffled. The shuffle functionality is displayed visually by having all the cards numbered 1 to 12. 
 
-![benefits-image](documentation/features/benefits.PNG)
+![game-area-image-mobile](documentation/features/game-area-mobile.PNG)
 
-![benefits-mobile-image](documentation/features/benefits-mobile.PNG)
+![game-area-image-desktop](documentation/features/game-area-desktop.PNG)
 
 ### The Score Area
 
 The score area informs the user of their score. The inital score is integer number 0 which means that no matching pairs have been found. For each matching pair thereafter the score increments by an integer number of 1. The max score that any user can reach is a maximum score of integer number 6. A timer automatically starts incrementing when the user clicks on the first chosen card. The timer automatically stops when the user finds the last matching card. The timer resets to zero when the user chooses to play another game, when the user chooses not to play another game or when the website loads.
 
-![paralax-image](documentation/features/paralax.PNG)
+![score-area-image](documentation/features/score-area.PNG)
 
 ### The Rules Modal
 The rules modal is displayed when the user clicks on the question mark icon. The rules of the memory card game are explained to the user for the game to be successfully completed. The rules modal can be closed by clicking on the close icon.
 
+![rules-modal-image-mobile](documentation/features/game-rules-mobile.PNG)
+
+![rules-modal-image-desktop](documentation/features/game-rules-desktop.PNG)
+
 ### The Congratulations Modal
 When the user finds the last matching pair a congratulations modal is displayed informing the user that they have won the game. They have matched the animals with their correct habitat and found all six pairs. The modal also gives the user a choice of playing a new game or not. If the user chooses to play a new game the modal closes and a new game loads with all twelve cards shuffled. If the user chooses not to play another game the modal closes and a new game loads with all twelve cards shuffled for the next waiting player.
+
+![congratulations-modal-image-mobile](documentation/features/congrats-modal-mobile.PNG)
+
+![congratulations-modal-image-desktop](documentation/features/congrats-modal-desktop.PNG)
 
 ## Future Features
 
@@ -178,9 +186,9 @@ The following test scenarios were executed on various media devices and results 
 | Is the website responsive on mobile device screens.|Pass  |
 | Is the website responsive on desktop device screens.|Pass  |
 
-![mobile-responsive](documentation/responsive/responsive-small.PNG)
+![mobile-responsive](documentation/responsive/mobile.PNG)
 
-![desktop-responsive](documentation/responsive/responsive-large.PNG)
+![desktop-responsive](documentation/responsive/desktop.PNG)
 
 ## Lighthouse Testing
 All website pages were tested using the Lighthouse tool on a couple of different browsers, Chrome and Edge. The page load was analysed and Lighthouse reports and scores were generated.  
@@ -195,7 +203,7 @@ The Best Practice score for the Techniques page and the Signup page scored 78. T
 
 #### Desktop
 
-![chrome-lighthouse-techniques-image](documentation/lighthouse/chrome/chrome-mobile.PNG)
+![chrome-lighthouse-techniques-image](documentation/lighthouse/chrome/chrome-desktop.PNG)
 
 ### Microsoft Edge
 
