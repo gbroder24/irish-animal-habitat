@@ -242,6 +242,10 @@ body {
   /* Media query: laptop and larger (1440px and up) */
   @media screen and (min-width: 1440px) {
 
+    body {
+      background-image: url(../images/background-image-laptop.jpeg);
+  }
+  
   .heading {
     margin: 10px 420px;
   }
@@ -254,6 +258,10 @@ body {
 
 /* Media query: screen and larger (2560px and up) */
 @media screen and (min-width: 2560px) {
+
+  body {
+    background-image: url(../images/background-image-desktop.jpeg);
+  }
 
   .heading {
     margin: 10px 980px;
