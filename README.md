@@ -220,19 +220,19 @@ All html code was validated using the W3C Markup Validation Service. No errors f
 
 ### index.html
 
-![validation-index.html-image](documentation/validation/html/index.PNG)
+![validation-index.html-image](documentation/validation/html/html-validation.PNG)
 
 ## CSS Validation
 All css code was validated using the W3C CSS Validation Service. No errors found.
 
 ### style.css
 
-![validation-style.css-image](documentation/validation/css/css.PNG)
+![validation-style.css-image](documentation/validation/css/css-validator.PNG)
 
 ### script.js
 All javascript code was validated using the JSHint Code Quality Tool. No errors found.  
 
-![validation-style.css-image](documentation/validation/css/css.PNG)
+![validation-style.css-image](documentation/validation/js/js-validator.PNG)
 
 ## Known Bugs
 
@@ -302,6 +302,8 @@ All other icons used are from [ Font Awesome ](https://fontawesome.com/)
 [ Youtube freeCodeCamp ](https://youtu.be/ZniVgo8U7ek?feature=shared) memory card game javascript tutorial.
 
 [ Youtube freeCodeCamp ](https://youtu.be/ec8vSKJuZTk?feature=shared) Ania Kubowmemory learn javascript by building memory game tutorial.
+
+[ Inside The Div ](https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen) for understanding the timer concept.
 
 ### Readme
 The Body and Mind readme mark down was inspired by the following:
