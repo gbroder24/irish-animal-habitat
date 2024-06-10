@@ -91,7 +91,7 @@ body {
 }
 
 /* The Congratulations Modal Credit https://www.w3schools.com/howto/howto_css_modals.asp */
-#congrats-modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -101,6 +101,15 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
+}
+
+#question {
+  font-size: 2em;
+}
+
+#close-modal {
+  font-size: 2em;
+  color: green;
 }
 
 /* Modal Content */

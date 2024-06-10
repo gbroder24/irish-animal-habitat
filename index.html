@@ -149,7 +149,7 @@
     <div class="score-area">
         <div class="score">Matching Pairs Found: <span id="result">0</span></div>
     </div>
-    <div id="question-mark"><i class="fa-solid fa-circle-question"></i></div>
+    <div id="question-mark"><span id="question"><i class="fa-solid fa-circle-question"></i></span></div>
     <div class="modal" id="congrats-modal">
         <div class="modal-content">
             <h4>Congratulations You Won!</h4>
@@ -165,10 +165,13 @@
     </div>
     <div class="modal" id="rules-modal">
         <div class="modal-content">
-            <h4>Irish Animal Habitat Game Rules<span class="close-modal"><i class="fa-solid fa-circle-xmark"></i></span></h4>
+            <span id="close-modal"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h4>Irish Animal Habitat Game Rules</h4>
             <br>
             <p>Match the animals with their habitat.</p>
+            <br>
             <p>Guess correctly and the cards stay face up displaying the image of an animal and its habitat.</p>
+            <br>
             <p>Guess incorrectly and the cards flip back to their original state. Try again!</p>
             <br>
         </div>

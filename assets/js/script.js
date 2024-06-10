@@ -12,6 +12,9 @@ let congratsModal = document.getElementById('congrats-modal');
 let closeCongratsModal = document.getElementById('close');
 let newGame = document.getElementById('yes-btn');
 let noNewGame = document.getElementById('no-btn');
+let gameRulesModal = document.getElementById('rules-modal');
+let questionIcon = document.getElementById('question-mark');
+let closeRulesModal = document.getElementById('close-modal');
 
 let gameArea = document.getElementsByClassName("game-area");
 let classBox = document.getElementsByClassName("box");
@@ -141,4 +144,26 @@ let classButton = document.getElementsByClassName("button");
 // This for loop iterates over the classButton array. It adds an event listener to each button in the congrats modal and listens for a click.
 for(j=0; j<classButton.length; j++){
     classButton[j].addEventListener('click', closeModalCongrats);
+}
+
+// Click Event Listener to display the rules modal
+questionIcon.addEventListener('click', displayRulesModal);
+
+/**
+ * This function displays the rules modal
+ * Code used from https://www.w3schools.com/howto/howto_css_modals.asp tutorial
+ */
+function displayRulesModal() {
+    gameRulesModal.style.display = "block";
+}
+
+// Click Event Listener to close the rules modal
+closeRulesModal.addEventListener('click', hideRulesModal);
+
+/**
+ * This function closes the rules modal
+ * Code used from https://www.w3schools.com/howto/howto_css_modals.asp tutorial
+ */
+function hideRulesModal() {
+    gameRulesModal.style.display = "none";
 }
