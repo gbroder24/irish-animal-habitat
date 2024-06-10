@@ -272,6 +272,8 @@ The live link to the website can be found here: [Irish Animal Habitat](https://g
 
 The design of the card game was lead by the [ Cat ASMR Memory Game ](https://agnieszka-21.github.io/memory-game-cats/) project.
 
+The design of the modals was influenced by the [ W3schools ](https://www.w3schools.com/howto/howto_css_modals.asp)
+
 The tab icon was generated using [ favicon ](https://favicon.io/).
 
 All other icons used are from [ Font Awesome ](https://fontawesome.com/)

@@ -24,7 +24,7 @@ for(i=0; i<classBox.length; i++){
 /**
  * The function checks if the card clicked was the first card or the second.
  * If clicked, store the state of the the card.
- * Code used from https://youtu.be/6-CsPmYQ-VI?si=Oecpo5LhCfgwdWHB tutorial
+ * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function boxClicked (event){
     if(lockBoard) return;
@@ -48,7 +48,7 @@ function boxClicked (event){
  * Use push method on the chosen pair of cards and store in cardsWon variable.
  * If cardsWon length is strictly equal to integer number 6 call display congrats modal.
  * Else unflip chosen cards and empty cards chosen array.
- * Code used from https://youtu.be/m8nmh3_lejc?si=2rHCCisfFgYSHW0W tutorial
+ * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function checkForMatch(){
     if(cardOne.dataset.image === cardTwo.dataset.image){
@@ -70,6 +70,7 @@ function checkForMatch(){
 /**
  * The function removes the click event listener from cards that have been paired
  * and the function resetBoard is called.
+ * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function disableCards(){
     cardOne.removeEventListener('click', boxClicked);
@@ -81,6 +82,7 @@ function disableCards(){
 /**
  * The function executes when a pair of flipped cards do not match.
  * It has a time delay of 1.5 secs to unflip.
+ * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function unFlipCards(){
     lockBoard = true;
@@ -96,7 +98,7 @@ function unFlipCards(){
 /**
  * This function sets flippedCard, lockBoard variables to false and 
  * sets cardOne and cardTwo variables to null resetting the board.
- * Code used from https://youtu.be/20k84LS1LZY?si=Oy7ZmA21I4U-_UPy tutorial
+ * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function resetBoard(){
     flippedCard = false;
@@ -108,7 +110,7 @@ function resetBoard(){
 /**
  * It shuffles the cards and assigns each card
  * a random integer.
- * Code used from https://youtu.be/20k84LS1LZY?si=Oy7ZmA21I4U-_UPy tutorial
+ * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function shuffle(){
     for(i=0; i<classBox.length; i++){

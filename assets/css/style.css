@@ -90,7 +90,7 @@ body {
     font-size: 1rem;
 }
 
-/* The Congratulations Modal */
+/* The Congratulations Modal Credit https://www.w3schools.com/howto/howto_css_modals.asp */
 #congrats-modal {
   display: none;
   position: fixed;
@@ -251,7 +251,7 @@ body {
   /* Media query: laptop and larger (1440px and up) */
   @media screen and (min-width: 1440px) {
 
-    body {
+  body {
       background-image: url(../images/background-image-laptop.jpeg);
   }
   
