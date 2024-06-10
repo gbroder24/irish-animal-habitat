@@ -12,7 +12,7 @@ body {
     background-image: url(../images/background-image-large.webp);
     color: blanchedalmond;
     text-align: center;
-    margin: 95px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
 }
@@ -86,8 +86,12 @@ body {
 
 .score-area {
     width: 210px;
-    margin: 0 35px;
+    margin: 10px 35px;
     font-size: 1rem;
+}
+
+.time {
+  margin: 10px;
 }
 
 /* The Congratulations Modal Credit https://www.w3schools.com/howto/howto_css_modals.asp */
@@ -205,8 +209,8 @@ body {
 
   .score-area {
     width: 300px;
-    padding: 10px;
-    margin: 50px 234px;
+    padding-top: 10px;
+    margin: 10px 234px;
     font-size: 1.5rem;
   }
 
@@ -251,7 +255,7 @@ body {
   .score-area {
     width: 300px;
     padding: 10px;
-    margin: 50px 362px;
+    margin: 10px 362px;
     font-size: 1.5rem;
   }
 
@@ -269,7 +273,7 @@ body {
   }
 
   .score-area {
-    margin: 50px 567px;
+    margin: 10px 567px;
   }
 
 }
