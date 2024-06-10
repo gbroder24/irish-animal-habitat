@@ -9,78 +9,6 @@
 
 ## [**Repository**](https://github.com/gbroder24/irish-animal-habitat.git)
 
-## Table of Contents
-
-[ UX / UI ](#uxui)  
-+ [ Target Audience ](#target-audience)  
-+ [ User Stories ](#user-stories)  
-	* [ Client Goals ](#client-goals)  
-	* [ User Goals ](#user-goals)   
-+ [ Wireframes ](#wireframes)  
-	* [ Landing Page ](#landing-page)  
-	* [ Techniques Page ](#techniques-page)  
-	* [ Signup Page ](#signup-page)   
-+ [ Color Palette ](#color-palette)  
-+ [ Font Styles ](#font-styles)  
-+ [ Accessibility ](#accessibility)  
-
-[ List of Features ](#list-of-features)    
-+ [ Header ](#header)  
-+ [ Hero Image ](#hero-image)  
-+ [ The Benefits ](#the-benefits)  
-+ [ Paralax Image ](#paralax-image)  
-+ [ Timetable ](#timetable)  
-+ [ Footer ](#footer)
-+ [ Techniques Page ](techniques-page-1)  
-+ [ Signup Page ](signup-page-1)  
-
-[ Future-Features ](#future-features)  
-+ [ Techniques Page ](#techniques-page-2)  
-+ [ Signup Page ](#signup-page-2)  
-+ [ User Account ](#user-account)  
-+ [ Error Page ](#error-page)  
-
-[ Tools and Technologies ](#tools-and-technologies)   
-
-[ Testing ](#testing)  
-+ [ Website Links ](#website-links)  
-+ [ Signup Form ](#signup-form)  
-+ [ User Testing ](#user-testing)  
-+ [ Responsive Testing ](#responsive-testing)  
-
-[ Lighthouse Testing ](#lighthouse-testing)    
-+ [ Google Chrome ](#google-chrome)  
-	* [ index.html ](#indexhtml)  
-	* [ techniques.html ](#techniqueshtml)  
-	* [ signup.html ](#signuphtml)  
-+ [ Microsoft Edge ](#microsoft-edge)  
-	* [ index.html ](#indexhtml-1)  
-	* [ techniques.html ](#techniqueshtml-1)  
-	* [ signup.html ](#signuphtml-1)  
-
- [ HTML Validation ](#html-validation)  
-+ [ index.html ](#indexhtml-2)  
-+ [ techniques.html ](#techniqueshtml-2)  
-+ [ signup.html ](#signuphtml-2)  
-
-[ CSS Validation ](#css-validation)    
-+ [ style.css ](#stylecss)  
-
-[ Known Bugs ](#known-bugs)   
-
-[ Deployment](#deployment) 
-+ [ Cloning and Forking ](#cloning-and-forking)  
-+ [ Local ](#local)  
-+ [ Remote ](#remote)  
-
-[ Credits](#credits)  
-+ [ Images ](#images)  
-+ [ Embedded Videos ](#embedded-videos)  
-+ [ Map ](#map)  
-+ [ Content and Resources ](#content--resources)  
-+ [ Readme ](#readme)  
-+ [ Acknowledgements ](#acknowledgements)  
-
 ## UX/UI
 
 ### Target Audience
@@ -336,60 +264,36 @@ The live link to the website can be found here: [Irish Animal Habitat](https://g
 
 ### Images
 
-[ Hero Image ](https://www.pexels.com/photo/people-gathered-on-a-yoga-class-7596990/)
+[ Background Image ](https://leonardo.ai/)
 
-[ Benefits Image ](https://www.pexels.com/photo/woman-meditating-in-lotus-pose-3822583/)
-
-[ Paralax Image ](https://www.istockphoto.com/photo/close-up-of-athletic-woman-rolling-up-her-exercise-mat-after-practicing-at-health-gm1324877187-410074024)
-
-[ Timetable background image ](https://www.pexels.com/photo/aerial-photography-of-a-river-shannon-surrounded-by-green-field-5082140/)
-
-[ Mindful Image ](https://www.calm.com/blog/bedtime-yoga?utm_medium=organic&utm_source=blog&utm_campaign=daily-routine)
-
-[ Breathwork Image ](https://www.calm.com/blog/how-to-breathe?utm_medium=organic&utm_source=blog&utm_campaign=mind-body-connection)
-
-[ Visualisation Image ](https://www.calm.com/blog/visualization-meditation?utm_medium=organic&utm_source=blog&utm_campaign=mind-body-connection)
-
-[ Signup Image ](https://www.calm.com/blog/yoga-for-relaxation?utm_medium=organic&utm_source=blog&utm_campaign=mind-body-connection)
-
-### Embedded Videos
-
-[ Yoga Video ](https://www.youtube.com/watch?v=gE4Jdr11-co)
-
-[ Breath Focus ](https://www.youtube.com/watch?v=ZY4tPSrLZQc)
-
-[ Visualisation Video ](https://www.youtube.com/watch?v=BhaIklnRpjc)
-
-### Map
-[ Signup Map ](https://www.google.com/maps/place/52%C2%B040'23.2%22N+8%C2%B033'50.1%22W/@52.67312,-8.563911,14z/data=!4m4!3m3!8m2!3d52.6731199!4d-8.5639113?hl=en&entry=ttu)
+[ Card Images ](https://leonardo.ai/)
 
 ### Content & Resources
-The design of the landing page was lead by the [ Love Running ](https://code-institute-org.github.io/love-running-2.0/index.html) project.
 
-The design of the techniques page was lead by the [ calm.com ](https://www.calm.com/blog/mind-body-connection#:~:text=Get%20started%20with%20mindfulness%20exercises,truly%20present%20in%20the%20moment) website.
-
-The design of the signup page was lead by the [ Beach Yoga Fuerteventura ](https://decant09.github.io/beach-yoga-fuerteventura/contact.html) project.
+The design of the card game was lead by the [ Cat ASMR Memory Game ](https://agnieszka-21.github.io/memory-game-cats/) project.
 
 The tab icon was generated using [ favicon ](https://favicon.io/).
 
-Typography researched on [ google fonts ](https://fonts.google.com/).
-
 All other icons used are from [ Font Awesome ](https://fontawesome.com/)
 
-[ Code Institute ](https://codeinstitute.net/ie/about-us/?nab=0) for course / module content and portfolio project 1 scope.
+[ Code Institute ](https://codeinstitute.net/ie/about-us/?nab=0) for course / module content and portfolio project 2 scope.
 
-[ Stack Overflow ](https://stackoverflow.com/questions/57423244/manifest-line-1-column-1-syntax-error-on-chrome-browser) for the solution to the 404 syntax error.
+[ Stack Overflow ](https://try.stackoverflow.co/explore-teams?utm_source=adwords&utm_medium=ppc&utm_campaign=kb_teams_search_brand_emea-dach&_bt=657236278306&_bk=stack+overflow&_bm=p&_bn=g&gad_source=1&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVKXkb9GqCjcQ7T-jpbiW7S_o_x79HM_RCJx232j_ji92jAqPq9WebxoC6lgQAvD_BwE) for any queries.
 
-[ W3schools ](https://www.w3schools.com/) for any queries or difficulties encountered with code concepts in html and css. 
+[ W3schools ](https://www.w3schools.com/) for any queries or difficulties encountered with code concepts in html, css and javascript. 
 
 [ Flexbox Froggy ](https://flexboxfroggy.com/) for understanding the flexbox concept.
+
+[ Youtube freeCodeCamp ](https://youtu.be/ZniVgo8U7ek?feature=shared) memory card game javascript tutorial.
+
+[ Youtube freeCodeCamp ](https://youtu.be/ec8vSKJuZTk?feature=shared) Ania Kubowmemory learn javascript by building memory game tutorial.
 
 ### Readme
 The Body and Mind readme mark down was inspired by the following:
 
-[Belfast Auto Repairs](https://github.com/Alan-Bushell/belfast-auto-repairs/blob/main/README.md#testing)
+[ Cat ASMR Memory Game ](https://github.com/Agnieszka-21/memory-game-cats/blob/main/README.md)
 
-[ Cross Stitch Art ](https://github.com/laurakond/Cross-Stitch-Art/blob/main/README.md)
+[ Body and Mind ](https://github.com/gbroder24/body-and-mind/blob/main/README.md)
 
 ### Acknowledgements
 
