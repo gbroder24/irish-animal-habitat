@@ -79,6 +79,10 @@ body {
     transform: rotateY(180deg);
 }
 
+.card-img {
+  border-radius: 5px;
+}
+
 .card-number {
   font-size: 2em;
   padding-top: 20px;

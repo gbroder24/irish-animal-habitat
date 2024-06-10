@@ -82,18 +82,17 @@ The game area displays twelve cards in neat rows and columns. The cards lay face
 
 ### The Score Area
 
-The score area informs the user of their score. The inital score is integer number 0 which means that no matching pairs have been found. For each matching pair thereafter the score increments by an integer number of 1. The max score that any user can reach is a maximum score of integer number 6.
+The score area informs the user of their score. The inital score is integer number 0 which means that no matching pairs have been found. For each matching pair thereafter the score increments by an integer number of 1. The max score that any user can reach is a maximum score of integer number 6. A timer automatically starts incrementing when the user clicks on the first chosen card. The timer automatically stops when the user finds the last matching card. The timer resets to zero when the user chooses to play another game, when the user chooses not to play another game or when the website loads.
 
 ![paralax-image](documentation/features/paralax.PNG)
+
+### The Rules Modal
+The rules modal is displayed when the user clicks on the question mark icon. The rules of the memory card game are explained to the user for the game to be successfully completed. The rules modal can be closed by clicking on the close icon.
 
 ### The Congratulations Modal
 When the user finds the last matching pair a congratulations modal is displayed informing the user that they have won the game. They have matched the animals with their correct habitat and found all six pairs. The modal also gives the user a choice of playing a new game or not. If the user chooses to play a new game the modal closes and a new game loads with all twelve cards shuffled. If the user chooses not to play another game the modal closes and a new game loads with all twelve cards shuffled for the next waiting player.
 
 ## Future Features
-
-### A Timer
-
-Implement a timer that automatically starts incrementing when the user clicks on the first chosen card. The timer automatically stops when the user finds the last matching card.
 
 ### User Modal
 
@@ -136,13 +135,17 @@ The following test scenarios were executed on the website and results recorded:
 
 |Scenario|Result  |
 |--|--|
+| Verify that when the user clicks on the question mark icon the game rules modal is displayed.|Pass  |
+| Verify that when the user clicks on the close X icon the game rules modal is not displayed.|Pass  |
 | Verify that when the user clicks on the first chosen card that the card flips over and reveals an image.|Pass  |
+| Verify that when the user clicks on the first chosen card that the timer starts to increment.|Pass  |
 | Verify that the first chosen card does not unflip and remains face up displaying the image.|Pass  |
 | Verify that when the user clicks on the second chosen card that the card flips over and reveals an image.|Pass  |
 | Verify that when the animal is matched with its correct habitat that the two cards remain unflipped and remain face up.|Pass  |
 | Verify that when the animal is matched with its correct habitat that the matching pairs found score increments by one.|Pass  |
 | Verify that all remaining matching cards behave in the same way.|Pass  |
 | Verify that when all the matching pairs are found the score increments to a maximum score of six.|Pass  |
+| Verify that when all the matching pairs are found the timer stops.|Pass  |
 | Verify that when the animal is not matched with its correct habitat that the two unmatched cards unflip and remain face down not displaying the images.|Pass  |
 | Verify that when two cards have flipped over, another card cannot be flipped until 1.5 seconds has timed out.|Pass  |
 | Verify that when all matching pairs have been found a congratulations modal is displayed.|Pass  |
@@ -150,6 +153,7 @@ The following test scenarios were executed on the website and results recorded:
 | Verify that the cards have been shuffled for the new game.|Pass  |
 | Verify the congratulations modal 'NO' button loads a new game.|Pass  |
 | Verify that the cards have been shuffled for the next game.|Pass  |
+| Verify that the timer is reset to zero for the next game.|Pass  |
 
 ### User Testing
 The following test scenarios were executed on users and results recorded:
@@ -157,10 +161,11 @@ The following test scenarios were executed on users and results recorded:
 |Scenario|Result  |
 |--|--|
 | Did the user understand the concept of the card game.|Pass  |
-| Did the user understand the instructions.|Pass  |
+| Did the user understand the game rules.|Pass  |
 | Did the user match the cards.|Pass  |
 | Did the user successfully complete the game.|Pass  |
 | Was the user informed that they matched all the cards.|Pass  |
+| Was the user informed of their time to successfully complete the game.|Pass  |
 | Did the user want to try again and start a new game.|Pass  |
 | Is the user aware that the cards reshuffle for every new game.|Pass  |
 
