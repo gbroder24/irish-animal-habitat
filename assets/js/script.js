@@ -30,7 +30,7 @@ for (i = 0; i < classBox.length; i++) {
 }
 
 /**
- * The function starts timer when first card is clicked Code used from https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen
+ * The function starts timer when first card is clicked. Code used from https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen
  * The function checks if the card clicked was the first card or the second.
  * If clicked, store the state of the the card.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
@@ -70,6 +70,7 @@ function checkForMatch() {
         cardsWon.push(cardsChosen);
         pairsFound.innerHTML = cardsWon.length;
         if (cardsWon.length === 6) {
+            stopTimer();
             displayCongratsModal();
 
         }
@@ -180,7 +181,8 @@ function hideRulesModal() {
 }
 
 /**
- * 
+ * This function starts the timer
+ * Code used from https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen
  */
 function startTimer() {
     startTime = Date.now() - elapsedTime;
@@ -188,23 +190,16 @@ function startTimer() {
 }
 
 /**
- * 
+ * This function stops the timer
+ * Code used from https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen
  */
 function stopTimer() {
     clearInterval(timerInterval);
 }
 
 /**
- * 
- */
-function resetTimer() {
-    clearInterval(timerInterval);
-    elapsedTime = 0;
-    updateTimer();
-}
-
-/**
- * 
+ * This function updates the timer display
+ * Code used from https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen
  */
 function updateTimer() {
     const timeElapsed = Date.now() - startTime;
