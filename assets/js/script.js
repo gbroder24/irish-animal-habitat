@@ -3,9 +3,13 @@ let flippedCard = false;
 let lockBoard = false;
 let cardOne;
 let cardTwo;
+let startTime;
+let elapsedTime = 0;
+let timerInterval;
 
 let cardsChosen = [];
 let cardsWon = [];
+let timerArr = [];
 
 let pairsFound = document.getElementById('result');
 let congratsModal = document.getElementById('congrats-modal');
@@ -15,36 +19,43 @@ let noNewGame = document.getElementById('no-btn');
 let gameRulesModal = document.getElementById('rules-modal');
 let questionIcon = document.getElementById('question-mark');
 let closeRulesModal = document.getElementById('close-modal');
+const timer = document.getElementById('timer');
 
 let gameArea = document.getElementsByClassName("game-area");
 let classBox = document.getElementsByClassName("box");
 
 // This for loop iterates over the classBox array. It adds an event listener to each card and listens for a click.
-for(i=0; i<classBox.length; i++){
+for (i = 0; i < classBox.length; i++) {
     classBox[i].addEventListener('click', boxClicked);
 }
 
 /**
+ * The function starts timer when first card is clicked Code used from https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen
  * The function checks if the card clicked was the first card or the second.
  * If clicked, store the state of the the card.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
-function boxClicked (event){
-    if(lockBoard) return;
-    if(this === cardOne) return;
-        let div = this;
-        this.classList.toggle('box-inner');
+function boxClicked(event) {
+    if (lockBoard) return;
+    if (this === cardOne) return;
+    let div = this;
+    this.classList.toggle('box-inner');
 
-        if (!flippedCard){
-            flippedCard = true;
-            cardOne = this;
-            cardsChosen.push(cardOne.dataset);
-        } else {
-            cardTwo = this;
-            cardsChosen.push(cardTwo.dataset);
-            checkForMatch();
-          }
+    if (!flippedCard) {
+        flippedCard = true;
+        cardOne = this;
+        cardsChosen.push(cardOne.dataset);
+        timerArr.push(cardOne);
+        if (timerArr.length === 1) {
+            startTimer();
+        }
+    } else {
+        cardTwo = this;
+        cardsChosen.push(cardTwo.dataset);
+        checkForMatch();
     }
+}
+
 
 /**
  * The function checks the cards for a match. If they match call function disableCards().
@@ -53,14 +64,14 @@ function boxClicked (event){
  * Else unflip chosen cards and empty cards chosen array.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
-function checkForMatch(){
-    if(cardOne.dataset.image === cardTwo.dataset.image){
+function checkForMatch() {
+    if (cardOne.dataset.image === cardTwo.dataset.image) {
         disableCards();
         cardsWon.push(cardsChosen);
         pairsFound.innerHTML = cardsWon.length;
-
-        if(cardsWon.length === 6){
+        if (cardsWon.length === 6) {
             displayCongratsModal();
+
         }
         cardsChosen = [];
 
@@ -75,7 +86,7 @@ function checkForMatch(){
  * and the function resetBoard is called.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
-function disableCards(){
+function disableCards() {
     cardOne.removeEventListener('click', boxClicked);
     cardTwo.removeEventListener('click', boxClicked);
 
@@ -87,7 +98,7 @@ function disableCards(){
  * It has a time delay of 1.5 secs to unflip.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
-function unFlipCards(){
+function unFlipCards() {
     lockBoard = true;
 
     setTimeout(() => {
@@ -103,7 +114,7 @@ function unFlipCards(){
  * sets cardOne and cardTwo variables to null resetting the board.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
-function resetBoard(){
+function resetBoard() {
     flippedCard = false;
     lockBoard = false;
     cardOne = null;
@@ -115,8 +126,8 @@ function resetBoard(){
  * a random integer.
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
-function shuffle(){
-    for(i=0; i<classBox.length; i++){
+function shuffle() {
+    for (i = 0; i < classBox.length; i++) {
         let randomPos = Math.floor(Math.random() * 12);
         classBox[i].style.order = randomPos;
     }
@@ -142,7 +153,7 @@ function closeModalCongrats() {
 let classButton = document.getElementsByClassName("button");
 
 // This for loop iterates over the classButton array. It adds an event listener to each button in the congrats modal and listens for a click.
-for(j=0; j<classButton.length; j++){
+for (j = 0; j < classButton.length; j++) {
     classButton[j].addEventListener('click', closeModalCongrats);
 }
 
@@ -166,4 +177,38 @@ closeRulesModal.addEventListener('click', hideRulesModal);
  */
 function hideRulesModal() {
     gameRulesModal.style.display = "none";
+}
+
+/**
+ * 
+ */
+function startTimer() {
+    startTime = Date.now() - elapsedTime;
+    timerInterval = setInterval(updateTimer, 10);
+}
+
+/**
+ * 
+ */
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
+/**
+ * 
+ */
+function resetTimer() {
+    clearInterval(timerInterval);
+    elapsedTime = 0;
+    updateTimer();
+}
+
+/**
+ * 
+ */
+function updateTimer() {
+    const timeElapsed = Date.now() - startTime;
+    const seconds = Math.floor((timeElapsed / 1000) % 60);
+    const minutes = Math.floor((timeElapsed / 1000 / 60) % 60);
+    timer.innerHTML = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
