@@ -75,8 +75,13 @@ body {
 
 .box-inner-back {
     border-radius: 5px;
-    background-color: dodgerblue;
+    background-color: 	#635147;
     transform: rotateY(180deg);
+}
+
+.card-number {
+  font-size: 2em;
+  padding-top: 20px;
 }
 
 .score-area {
@@ -183,6 +188,10 @@ body {
 
   .card-img{
     width: 100%;
+  }
+
+  .card-number {
+    padding-top: 35%;
   }
 
   .score-area {

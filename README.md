@@ -38,7 +38,7 @@ The wireframe mockups were created on Balsamiq. They show what the website would
 
 The following colors were chosen for the website and ensure contrast is achieved in the main parts of the page.
 + blanchedalmond - Used in the generic body, headings and score area. It is a soft color and chosen so as not to distract the user from focusing on the game  
-+ dodgerblue - Used as the color for the back of the cards to attract the users attention.   
++ #635147 - Used as the color for the back of the cards. Earth tone color that styles nicely with the background image.   
 + #fefefe - Used as the background color of the modal.  
 + #888 - Used as the border color of the modal.  
 + green - Used in headings and paragragh content of the modal.  
@@ -74,7 +74,7 @@ The headings inform the user that the game is called Irish Animal Habitat and th
 
 ### The Game Area
 
-The game area displays twelve cards in neat rows and columns. The cards lay face down with the back of the cards displayed to the user. When the user clicks on the first card the card flips from back to front displaying either an image of an animal or its habitat and stays in position. When the user clicks on the second card the card flips from back to front displaying either an image of an animal or its habitat. The first and second cards chosen stay in position facing the user if the animal is matched to its correct habitat. If they are not a match the cards will flip back to their inital state. When the website is initally loaded all the cards are shuffled. 
+The game area displays twelve cards in neat rows and columns. The cards lay face down with the back of the cards displayed to the user. When the user clicks on the first card the card flips from back to front displaying either an image of an animal or its habitat and stays in position. When the user clicks on the second card the card flips from back to front displaying either an image of an animal or its habitat. The first and second cards chosen stay in position facing the user if the animal is matched to its correct habitat. If they are not a match the cards will flip back to their inital state. When the website is initally loaded all the cards are shuffled. The shuffle functionality is displayed visually by having all the cards numbered 1 to 12. 
 
 ![benefits-image](documentation/features/benefits.PNG)
 
