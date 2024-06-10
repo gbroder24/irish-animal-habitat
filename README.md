@@ -91,15 +91,15 @@ The target audience of the website is to attract young children and to help them
 
 ### Client Goals
 
-I want to provide an online game that highlights and raises awareness about Irelands unique biodiversity.
-I want to provide entertainment that sharpens the users memory.
-I want young children to explore and engage with Irelands unique biodiversity.
++ I want to provide an online game that highlights and raises awareness about Irelands unique biodiversity.  
++ I want to provide entertainment that sharpens the users memory.  
++ I want young children to explore and engage with Irelands unique biodiversity.  
 
 ### User Goals
 
-I want to engage and explore Irelands unique biodiversity.
-I want to play an entertaining and educational game about Irish animals and their habitats.
-I want to improve my memory.
++ I want to engage and explore Irelands unique biodiversity.  
++ I want to play an entertaining and educational game about Irish animals and their habitats.  
++ I want to improve my memory.  
 
 ### Wireframes
 The wireframe mockups were created on Balsamiq. They show what the website would look like on mobile and desktop devices.
@@ -178,6 +178,9 @@ Implement a time record area where the users time will be displayed.
 Implement a leaderboard modal feature so that the user(s) can compare the time it took to complete the game and adds a competitive aspect to the game.  
 Implement a leaderboard in local storage that records the score and time of the last ten to twenty users.
 
+### Rate App
+Implement a rate my app feature that kindly asks the user for feedback on the app e.g 5 stars out of 5 rating.
+
 ### Error Page
 Implement a 404 error page in case there are any bugs that prevent the website or any links from working and the user can navigate back to the website.
 
@@ -225,11 +228,13 @@ The following test scenarios were executed on users and results recorded:
 
 |Scenario|Result  |
 |--|--|
-| On the landing page scroll down and find out more about the website.|Pass  |
-| Navigate to the social media links.|Pass  |
-| Navigate to the 'Techniques' page and interact with the embedded videos.|Pass  |
-| Navigate to the 'Signup' page and fill in your details, email address, class and news letter preference.|Pass  |
-| Navigate to the 'Signup' page and locate class location.|Pass  |
+| Did the user understand the concept of the card game.|Pass  |
+| Did the user understand the instructions.|Pass  |
+| Did the user match the cards.|Pass  |
+| Did the user successfully complete the game.|Pass  |
+| Was the user informed that they matched all the cards.|Pass  |
+| Did the user want to try again and start a new game.|Pass  |
+| Is the user aware that the cards reshuffle for every new game.|Pass  |
 
 ### Responsive Testing
 
@@ -325,7 +330,7 @@ This website was deployed using GitHub pages. The steps to deploy are as follows
 
 It might take a few minutes to generate the "live" website link.
 
-The live link to the website can be found here: [Body and Mind](https://gbroder24.github.io/body-and-mind/index.html).
+The live link to the website can be found here: [Irish Animal Habitat](https://gbroder24.github.io/irish-animal-habitat/).
 
 ## Credits
 
