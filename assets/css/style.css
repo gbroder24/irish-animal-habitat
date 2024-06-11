@@ -85,6 +85,7 @@ body {
     border-radius: 5px;
     background-color: 	#635147;
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 /* Card image styles */
@@ -118,8 +119,9 @@ body {
 }
 
 /* Question icon */
-#question {
+#question-mark {
   font-size: 2em;
+  width: 100%;
 }
 
 /* Close modal icon */
@@ -225,9 +227,8 @@ body {
 
   /* Score area styles */
   .score-area {
-    width: 300px;
+    width: 100%;
     padding-top: 10px;
-    margin: 10px 234px;
     font-size: 1.5rem;
   }
 
@@ -278,18 +279,34 @@ body {
 
   /* Score area styles */
   .score-area {
-    width: 300px;
+    width: 100%;
+    text-align: center;
     padding: 10px;
-    margin: 10px 362px;
     font-size: 1.5rem;
   }
 
 }
 
+  /* Media query: laptop and larger (1290px and up) */
+  @media screen and (min-width: 1290px) {
+
+  /* Heading styles */
+  .heading {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  .score-area {
+    width: 100%;
+    margin: 0;
+  }
+
+  }
+
   /* Media query: laptop and larger (1440px and up) */
   @media screen and (min-width: 1440px) {
 
-    /* General styles */
+  /* General styles */
   body {
       background-image: url(../images/background-image-laptop.jpeg);
   }

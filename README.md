@@ -74,7 +74,7 @@ The headings inform the user that the game is called Irish Animal Habitat and th
 
 ### The Game Area
 
-The game area displays twelve cards in neat rows and columns. The cards lay face down with the back of the cards displayed to the user. When the user clicks on the first card the card flips from back to front displaying either an image of an animal or its habitat and stays in position. When the user clicks on the second card the card flips from back to front displaying either an image of an animal or its habitat. The first and second cards chosen stay in position facing the user if the animal is matched to its correct habitat. If they are not a match the cards will flip back to their inital state. When the website is initally loaded all the cards are shuffled. 
+The game area displays twelve cards in neat rows and columns. The cards lay face down with the back of the cards displayed to the user. When the user moves the cursor over the cards its style changes to pointer prompting the user to click on the card. When the user clicks on the first card the card flips from back to front displaying either an image of an animal or its habitat and stays in position. When the user clicks on the second card the card flips from back to front displaying either an image of an animal or its habitat. The first and second cards chosen stay in position facing the user if the animal is matched to its correct habitat. If they are not a match the cards will flip back to their inital state. When the website is initally loaded all the cards are shuffled. 
 
 ![game-area-image-mobile](documentation/features/game-area-mobile.PNG)
 
