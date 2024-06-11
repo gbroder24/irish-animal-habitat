@@ -240,11 +240,9 @@ All javascript code was validated using the JSHint Code Quality Tool. No errors 
 
 The following bugs were discovered:
 
-![bugs-image](documentation/bugs/404-syntax-error.PNG)
++ When the website loads / reloads flashing occurs. The background of the website is white. Then a second after loading, the background image is displayed.  
 
-+ When the website loads / reloads the background of the website is white. Then a second after loading, the background image is displayed.  
-
-+ When a cards image is displayed and the user clicks on it again, the cards flip over and then back displaying the image again.
++ When a cards image is displayed and the user clicks on it again, the cards flip over and then back displaying the image again.  
 
 ## Deployment
 
