@@ -140,7 +140,9 @@ shuffle();
  * Code used from https://www.w3schools.com/howto/howto_css_modals.asp tutorial
  */
 function displayCongratsModal() {
+    setTimeout(() => {
     congratsModal.style.display = "block";
+    }, 1000);
 }
 
 /**This function closes the congratulations modal
