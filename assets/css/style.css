@@ -118,6 +118,11 @@ overflow: auto;
 }
 
 /* Question icon */
+#question-mark {
+  width: 32px;
+  margin-left: 45%;
+  }
+
 #question {
 font-size: 2em;
 }
@@ -230,6 +235,10 @@ h3 {
   margin: 10px 234px;
   font-size: 1.5rem;
 }
+
+#question-mark {
+  margin-left: 50%;
+  }
 
 /* Modal styles */
 .modal-content {
