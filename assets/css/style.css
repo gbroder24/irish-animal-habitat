@@ -92,11 +92,6 @@ body {
   border-radius: 5px;
 }
 
-.card-number {
-  font-size: 2em;
-  padding-top: 20px;
-}
-
 /* Score area styles */
 .score-area {
     width: 100%;
@@ -226,10 +221,6 @@ body {
 
   .card-img{
     width: 100%;
-  }
-
-  .card-number {
-    padding-top: 35%;
   }
 
   /* Score area styles */
