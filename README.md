@@ -45,6 +45,8 @@ The following colors were chosen for the website and ensure contrast is achieved
 + Black - Used when the mouse moves over the modal buttons to draw the users attention with a hover effect.  
 + #fefefe - Used when the mouse moves over the modal buttons to draw the users attention to the buttons text with a hover effect.  
 
+![color-pallette](documentation/color-pallette/color-pallette.png)
+
 ### Font Styles
 
 The default font family has been used to style the website. This was chosen so that the it would not distract the users attention away fron focusing on the game.
@@ -304,6 +306,8 @@ All other icons used are from [ Font Awesome ](https://fontawesome.com/)
 [ Youtube freeCodeCamp ](https://youtu.be/ec8vSKJuZTk?feature=shared) Ania Kubowmemory learn javascript by building memory game tutorial.
 
 [ Inside The Div ](https://www.insidethediv.com/javascript-simple-projects-beginners-online-stopwatch-full-screen) for understanding the timer concept.
+
+[ Coolors ](https://coolors.co/) for creating the color pallette.
 
 ### Readme
 The Body and Mind readme mark down was inspired by the following:
