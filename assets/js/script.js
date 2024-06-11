@@ -25,7 +25,7 @@ let gameArea = document.getElementsByClassName("game-area");
 let classBox = document.getElementsByClassName("box");
 
 // This for loop iterates over the classBox array. It adds an event listener to each card and listens for a click.
-for (i = 0; i < classBox.length; i++) {
+for (let i = 0; i < classBox.length; i++) {
     classBox[i].addEventListener('click', boxClicked);
 }
 
@@ -128,7 +128,7 @@ function resetBoard() {
  * Code used from https://youtu.be/ZniVgo8U7ek?feature=shared tutorial
  */
 function shuffle() {
-    for (i = 0; i < classBox.length; i++) {
+    for (let i = 0; i < classBox.length; i++) {
         let randomPos = Math.floor(Math.random() * 12);
         classBox[i].style.order = randomPos;
     }
@@ -156,7 +156,7 @@ function closeModalCongrats() {
 let classButton = document.getElementsByClassName("button");
 
 // This for loop iterates over the classButton array. It adds an event listener to each button in the congrats modal and listens for a click.
-for (j = 0; j < classButton.length; j++) {
+for (let j = 0; j < classButton.length; j++) {
     classButton[j].addEventListener('click', closeModalCongrats);
 }
 
